@@ -1,0 +1,11 @@
+header {
+    background-color: orange;
+    grid-column: ;
+}
+
+body {
+    display: grid;
+    grid-template-area: repeat(4, 25%);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
