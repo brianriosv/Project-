@@ -1,11 +1,199 @@
-header {
-    background-color: orange;
-    grid-column: ;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
+
+/* header */
+
+.container .header {
     display: grid;
-    grid-template-area: repeat(4, 25%);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*.container .header2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    position: fixed;
+    top: 0;
+    height: 100px;
+}
+
+.container .header2 .top .logo {
+    line-height: 100px;
+    font-size: 30px;
+}
+
+.container .header2 .top .lista {
+    line-height: 100px;
+}*/
+
+
+
+/* top */
+
+.container .header .top {
+    margin: 0;
+    padding: 2px;
+    background-color: #d0d9e1;    
+    display: grid;
+    grid-template-columns: 2fr 2fr; 
+    grid-template-rows: 1fr;
+}
+
+.container .header .top .logo a {text-decoration: none; color: black;}
+.container .header .top .logo a:hover {font-size:150%;}
+/*.container .header .top .logo a:visited {text-decoration: none; color: black;}
+.container .header .top .logo a:link {text-decoration: none; color: black;}
+.container .header .top .logo a:active {text-decoration: none; color: black;}*/
+
+.container .header .top ul {
+    list-style-type: none;        
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container .header .top li {
+    float: right;
+    overflow: hidden;
+}
+
+
+.container .header .top li a {
+    font-family: sans-serif;
+    display: block;
+    color: background;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;    
+    font-weight: bold;    
+}
+
+
+.container .header .top li .ar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.container .header .top .logo {
+    font-family: helvetica;
+    text-align: left;
+    font-weight: bold;
+    padding: 0px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* MEDIO */
+
+.medio {
+    padding: 5%;
+    background-color: #92a9b9;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 60px;
+}
+
+.medio h1 {
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+/* Acá no sabia como alinear la lista en el centro y me error fue poner text-align en 'a' cuando debe ser puesto en 'ul' */
+.medio ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.medio ul a {
+    text-decoration: none;
+    font-weight: bold; 
+    color: black;
+    padding: 10px 5px;
+    display: inline-block;
+    font-family: sans-serif;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.medio ul li a:hover {
+    background-color: lightcyan;
+    border-radius: 50px;
+}
+
+
+/* Para mostra la lista en horizontal apuntamos siempre a 'li'  */
+.medio li {
+    display: inline;
+    line-height: 30px;
+}
+
+/* SEARCH */
+
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 23px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 23px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* section */
+
+/*.wrapper {
+    width:90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}*/
+
+
+
+
+/*mainfooter*/
+
+.footer {
+    background-color: #d0d9e1;
+    line-height: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: helvetica;
 }
